@@ -28,6 +28,4 @@ describe('CI sequence', () => {
     expect(/.*pull\s+request.*/ig.test(fileContents)).toBe(true);
   });
 
-    // TODO <= add the tests between these comments
-
 });
