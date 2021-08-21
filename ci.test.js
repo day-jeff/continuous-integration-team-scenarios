@@ -11,7 +11,6 @@ describe('CI sequence', () => {
     expect(/.*#.*/ig.test(fileContents)).toBe(true);
   });
 
-  // TODO add the tests between these comments =>
   it('1. pull latest code', () => {
     expect(/.*pull.*/ig.test(fileContents)).toBe(true);
   });
@@ -39,7 +38,5 @@ describe('CI sequence', () => {
   it('7. If everything is good in production for some period of time, merge changes to master.', () => {
     expect(/.*merge.*to\s+master.*/ig.test(fileContents)).toBe(true);
   });
-
-  // TODO <= add the tests between these comments
 
 });
